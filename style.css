@@ -1,3 +1,61 @@
 /*==================== FONTS ====================*/
 /* League Spartan - GoogleFonts */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* all items in HTML file */
+* { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "League Spartan";
+    outline: none;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    /* content overflow is clipped, rest of content will be invisible */
+    overflow: hidden;
+}
+
+body {
+    background: #121212;
+    color: #fff;
+}
+
+/* index.html header class */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Logo {
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    /* display links horizontally */
+    display: inline-block;
+    margin-left: 4rem;
+    font-size: 1.7rem;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #419bf9;
+}
