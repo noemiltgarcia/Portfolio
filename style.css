@@ -123,3 +123,24 @@ section{
 span{
     color: #419bf9;
 }
+
+.home-detail .btn{
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1.25rem 2.8rem 1rem;
+    border-radius: 5px;
+    color: #121212;
+    background: #419bf9;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    background: #121212;
+    color: #419bf9;
+    border: 2px solid #419bf9;
+}
