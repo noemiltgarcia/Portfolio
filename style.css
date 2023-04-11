@@ -16,7 +16,7 @@
 html{
     font-size: 62.5%;
     /* content overflow is clipped, rest of content will be invisible */
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -122,7 +122,7 @@ span{
     color: #419bf9;
 }
 
-.home-detail .btn{
+.btn{
     display: inline-block;
     font-size: 1.6rem;
     padding: 1.25rem 2.8rem 1rem;
@@ -150,3 +150,32 @@ span{
     /* box-shadow: 0 0 20px #419bf9;
     filter: drop-shadow(0 0 1rem #419bf9);
 } */
+
+.about-img img{
+    width: 35vw;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p{
+    color: #419bf9;
+}
+
+.allheading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about h2{
+    text-align: left;
+    font-size: 1.2;
+}
+
+.about-section p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
