@@ -224,6 +224,10 @@ span{
     background: #121212;
 }
 
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+
 .portfolio-box{
     position: relative;
     border-radius: 2rem;
@@ -234,13 +238,14 @@ span{
 
 .portfolio-section{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
     gap: 2.5rem;
 }
 
 .portfolio-box img{
     width: 100%;
+    transition: .5s ease;
 }
 
 .portfolio-head{
@@ -255,4 +260,38 @@ span{
     justify-content: center;
     align-items: center;
     padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-box:hover .portfolio-head{
+    transform: translateY(0%);
+}
+
+.portfolio-box .portfolio-head h4{
+    font-size: 3rem;
+}
+
+.portfolio-head p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-head a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border: 50%;
+    text-decoration: none;
+}
+
+.portfolio-head i{
+    font-size: 2rem;
+    color: #121212;
 }
