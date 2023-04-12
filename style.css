@@ -54,6 +54,31 @@ section{
     text-decoration: none;
     font-weight: 700;
     cursor: pointer;
+    /* Applies an animation named SlideRight with a duration of 1 second, 
+        easing timing function, and forwards fill mode, which means the 
+        element will retain the properties of the last keyframe of the 
+        animation after it completes. */
+    animation: slideRight 1s ease forwards;
+    /* starts at opacity 0 */
+    opacity: 0;
+}
+
+@Keyframes slideRight{
+    /* 0% specifies starting point, translates the element horizontally by -100% of its own width, 
+    moving it completely out of view to the left. */
+    /* Sets the opacity of the element to 1, making it fully opaque. */
+    0%{
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    /* specifies the ending point of the animation, Resets the horizontal 
+    translation of the element, bringing it back to its original position. */
+    /* Sets the opacity of the element to 1, making it fully opaque. */
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar a{
@@ -64,6 +89,20 @@ section{
     display: inline-block;
     margin-left: 4rem;
     font-size: 1.7rem;
+    animation: slideTop .5s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s*var(--clr));
+}
+
+@Keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .navbar a:hover, .navbar a.active{
@@ -84,18 +123,37 @@ section{
 .home-detail h3{
     font-size: 3.2rem;
     font-weight: 700;
+    animation: slideTop .7s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
 }
 
 .home-detail h1{
     font-size: 5.6rem;
     font-weight: 700;
-    margin: .5rem 0;
-    opacity: 1;
+    margin: -3px 0;
+    animation: slideRight 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 
 .home-detail p{
     font-size: 1.6rem;
     opacity: 1;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .social-media a{
@@ -148,13 +206,38 @@ span{
     border: 2px solid #419bf9;
 }
 
-/* .home .home-img img{
+/* .home-img img{
     width: 25vw;
     background: transparent;
     color: #419bf9;
     /* box-shadow: 0 0 20px #419bf9;
     filter: drop-shadow(0 0 1rem #419bf9);
-} */
+    animation: Zoom 1s ease forwards, Float 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    opacity: 0;
+} 
+@keyframes Zoom{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes Float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+*/
 
 .about-img img{
     width: 35vw;
