@@ -375,3 +375,56 @@ form .btn{
     color: #121212;
     box-shadow: 0 0 20px #419bf9;
 }
+
+/*==================== RESPONSIVE ACROSS MEDIA [CODE] ====================*/
+/* when viewport width is 1200px or less, reduce font-size */
+@media(max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+/* when viewport width is 991px or less
+    adjust header padding (top + bottom -> 2rem / left + right is reduced by 3%
+    adjust service margin, etc.
+ */
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    .service{
+        margin-bottom: 7rem;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    footer{
+        padding: 2rem 3%;
+    }
+    .portfolio{
+        margin-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+}
+
+@media(max-width:768px){
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #121212;
+        border-top: 1px solid rgb(18, 18, 18, .1);
+        box-shadow: 0 .5rem 1rem rgba(18, 18, 18, .1);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+}
