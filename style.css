@@ -219,3 +219,40 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+.portfolio{
+    background: #121212;
+}
+
+.portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #1b1b1b;
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 2.5rem;
+}
+
+.portfolio-box img{
+    width: 100%;
+}
+
+.portfolio-head{
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.3),#419bf9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
