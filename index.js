@@ -33,3 +33,5 @@ window.onscroll=()=>{
         menubar.classList.toggle('bx-x')
         navbar.classList.toggle('active')
     }
+
+// ==================== HOME Textline Changer ====================
