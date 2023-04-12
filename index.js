@@ -1,11 +1,11 @@
 // ==================== Auto navbar scrolling ==================== 
-const section = document.querySelector('section')
-const navLink = document.querySelector('header nav a')
+const section = document.querySelectorAll('section')
+const navLink = document.querySelectorAll('header nav a')
 
 window.onscroll=()=>{
     section.forEach(sec=>{
         let top = window.scrollY;
-        let offset = set.offsetTop - 150;
+        let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id')
 
@@ -21,6 +21,7 @@ window.onscroll=()=>{
 // ==================== Fixed navbar menu ====================
     var header = document.querySelector('header')
     header.classList.toggle("sticky", window.scrollY>100)
+
     menubar.classList.remove('bx-x')
     navbar.classList.remove('active')
 };
