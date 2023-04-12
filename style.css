@@ -295,3 +295,46 @@ span{
     font-size: 2rem;
     color: #121212;
 }
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #1b1b1b;
+    border-radius: .8rem;
+    gap: 2.5rem;
+    margin: .7rem 0;
+}
+
+form input{
+    width: 49%;
+}
+
+textarea{
+    resize: none;
+}
+
+form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
