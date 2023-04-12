@@ -369,3 +369,9 @@ form .btn{
     color: #121212;
     text-align: center;
 }
+
+.footerUp a:hover, .footerUp a.active{
+    background: #419bf9;
+    color: #121212;
+    box-shadow: 0 0 20px #419bf9;
+}
