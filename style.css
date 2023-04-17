@@ -250,8 +250,14 @@ span{
     background: #1b1b1b;
 }
 
-.about p{
+.about p.headline{
     color: #419bf9;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.about p{
+    line-height: 2.5rem;
 }
 
 .allheading{
