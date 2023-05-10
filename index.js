@@ -36,7 +36,7 @@ window.onscroll=()=>{
 
 // ==================== HOME Textline Changer ====================
     var type =  new Typed('.textline', {
-        strings:["Visual Designer", "UI/UX Designer in Training"],
+        strings:["a Visual Designer", "an aspiring UI/UX Designer"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
